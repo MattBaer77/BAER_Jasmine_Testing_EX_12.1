@@ -1,5 +1,5 @@
 
-it('should calculate the monthly rate correctly', function () {
+it('should calculate the monthly rate correctly - including rate of 0', function () {
   // ...
   expect(calculateMonthlyPayment({ amount: 100000, years: 10, rate: 0.03 })).toEqual("965.61")
   expect(calculateMonthlyPayment({ amount: 100000, years: 10, rate: 0 })).toEqual("833.33")

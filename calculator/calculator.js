@@ -33,7 +33,8 @@ function setupIntialValues() {
 
   let monthly = calculateMonthlyPayment(values);
 
-  updateMonthly(monthly);
+  // updateMonthly(monthly);
+  update();
 }
 
 // Get the current values from the UI
@@ -76,6 +77,6 @@ function updateMonthly(monthly) {
 
   let calculatedMonthlyOutput = document.getElementById("monthly-payment");
 
-  calculatedMonthlyOutput.innerText = monthly
+  calculatedMonthlyOutput.innerText = "$" + monthly
 
 }

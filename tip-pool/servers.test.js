@@ -32,12 +32,12 @@ describe("Servers test (with setup and tear-down)", function() {
 
     let currentTDList = document.querySelectorAll('#serverTable td');
 
-    // console.log (currentTDList);
+    console.log (currentTDList);
 
-    expect(currentTDList.length).toEqual(2);
+    expect(currentTDList.length).toEqual(3);
     expect(currentTDList[0].innerText).toEqual('Alice');
     expect(currentTDList[1].innerText).toEqual('$0.00');
-    // expect(currentTDList[3].innerText).toEqual('X');
+    expect(currentTDList[2].innerText).toEqual('X');
 
   });
 

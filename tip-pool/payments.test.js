@@ -12,7 +12,7 @@ describe ('payments test with setup and tear-down', function() {
 
         submitPaymentInfo();
 
-        // console.log(allPayments);
+        console.log(allPayments);
 
         // console.log(Object.keys(allPayments));
 
@@ -101,10 +101,11 @@ describe ('payments test with setup and tear-down', function() {
 
         // console.log(currentTDList);
 
-        expect(currentTDList.length).toEqual(3);
+        expect(currentTDList.length).toEqual(4);
         expect(currentTDList[0].innerText).toEqual('$100');
         expect(currentTDList[1].innerText).toEqual('$20');
         expect(currentTDList[2].innerText).toEqual('20%');
+        expect(currentTDList[3].innerText).toEqual('X');
 
     });
 

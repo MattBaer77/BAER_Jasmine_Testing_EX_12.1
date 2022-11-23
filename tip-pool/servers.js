@@ -4,6 +4,7 @@ let serverForm = document.getElementById('serverForm');
 let serverTbody = document.querySelector('#serverTable tbody');
 
 let allServers = {};
+// console.log(allServers)
 let serverId = 0;
 
 serverForm.addEventListener('submit', submitServerInfo);

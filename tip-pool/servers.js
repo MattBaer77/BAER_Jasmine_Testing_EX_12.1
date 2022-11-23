@@ -4,6 +4,7 @@ let serverForm = document.getElementById('serverForm');
 let serverTbody = document.querySelector('#serverTable tbody');
 
 let allServers = {};
+// console.log(allServers)
 let serverId = 0;
 
 serverForm.addEventListener('submit', submitServerInfo);
@@ -38,6 +39,8 @@ function updateServerTable() {
 
     appendTd(newTr, curServer.serverName);
     appendTd(newTr, '$' + tipAverage.toFixed(2));
+    appendDeleteBtn(newTr, 'server'); // Note - Copied this to see how it works
+
 
     serverTbody.append(newTr);
   }
